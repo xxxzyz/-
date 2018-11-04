@@ -6,22 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
- <android.support.v7.widget.Toolbar
+ <Toolbar
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
      android:id="@+id/toolbar"
      android:background="#987"
      tools:ignore="NewApi">
-  <TextView
-      android:id="@+id/toolbar_title"
-      style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_gravity="center"
-      android:text="自定义"
-      android:textSize="21sp"/>
-
-
-</android.support.v7.widget.Toolbar>
-
+</Toolbar>
 </android.support.constraint.ConstraintLayout>
