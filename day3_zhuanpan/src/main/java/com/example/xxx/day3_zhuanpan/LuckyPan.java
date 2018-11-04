@@ -43,6 +43,7 @@ public class LuckyPan extends SurfaceView implements SurfaceHolder.Callback,Runn
             R.mipmap.f015};
     //与图片对应的bitmap的数组
     private Bitmap [] mBitmaps;
+    //背景圆盘
     private Bitmap mBgBitmap=BitmapFactory.decodeResource(getResources(),R.mipmap.bg2);
     //盘块颜色
     private int[] mColors=new int[]{Color.parseColor("#FFC125"),Color.YELLOW,
@@ -118,7 +119,9 @@ public class LuckyPan extends SurfaceView implements SurfaceHolder.Callback,Runn
 
      //初始化绘制盘块的画笔
         mArcPaint=new Paint();
+        //是抗锯齿
         mArcPaint.setAntiAlias(true);
+        //防抖动
         mArcPaint.setDither(true);
         //初始化绘制文本的画笔
         mTextPaint=new Paint();
