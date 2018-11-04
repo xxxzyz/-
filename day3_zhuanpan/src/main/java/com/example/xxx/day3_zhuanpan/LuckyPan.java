@@ -31,7 +31,9 @@ public class LuckyPan extends SurfaceView implements SurfaceHolder.Callback,Runn
      */
     private boolean isRunning;
 
-
+   /*
+   盘块的文字，图片设置
+    */
     private String[] mTexts=new String[]{"单反相机","ipad","恭喜发财","IPHONE","服装一套","恭喜发财"};
     private int[] mImgs=new int[]{R.mipmap.danfan,
             R.mipmap.ipad,
@@ -102,7 +104,7 @@ public class LuckyPan extends SurfaceView implements SurfaceHolder.Callback,Runn
         //转盘的边长
         int width=Math.min(getMeasuredWidth(),getMeasuredHeight());
         mPadding=getPaddingLeft();
-        //半径
+        //直径
         mRadius=width-mPadding*2;
         //中心点
         mCenter=width/2;
